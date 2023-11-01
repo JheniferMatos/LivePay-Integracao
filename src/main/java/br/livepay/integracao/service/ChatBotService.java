@@ -1,6 +1,7 @@
 package br.livepay.integracao.service;
 
 // import org.springframework.beans.factory.annotation.Autowired;
+import com.google.gson.Gson;
 import org.springframework.stereotype.Service;
 
 import br.livepay.integracao.model.ChatBot;
@@ -12,7 +13,7 @@ public class ChatBotService {
 
     private final ChatBotRepository chatBotRepository;
     private final NLPService nlpService;
-    
+
     public ChatBotService(ChatBotRepository chatBotRepository, NLPService nlpService) {
         this.chatBotRepository = chatBotRepository;
         this.nlpService = nlpService;

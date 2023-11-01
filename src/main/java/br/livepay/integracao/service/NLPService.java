@@ -32,6 +32,7 @@ public NLPService() {
 }
 
 public String getIntent(String text) {
+    NLPService teste = new NLPService();
     if (categorizer == null) {
         return "Desculpe, não consigo entender a intenção.";
     }
@@ -51,7 +52,7 @@ public String getIntent(String text) {
 }
 
     public String respondToIntent(String intent, String userResponse) {
-
+        NLPService teste = new NLPService();
         if (intent.equals("intencao_compra")) {
             return "Por favor, digite seu nome completo";
         }

@@ -2,33 +2,21 @@ package br.livepay.integracao.controller;
 
 import java.util.Map;
 
-// import org.springframework.beans.factory.annotation.Autowired;
-// import org.springframework.beans.factory.annotation.Autowired;
-// import org.springframework.messaging.handler.annotation.MessageMapping;
-// import org.springframework.messaging.handler.annotation.SendTo;
-// import org.springframework.messaging.handler.annotation.SendTo;
-// import org.springframework.messaging.simp.SimpMessagingTemplate;
-// import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-// import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+
 
 import br.livepay.integracao.model.ChatBot;
 import br.livepay.integracao.service.ChatBotService;
-// import br.livepay.integracao.service.NLPService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
 
 @RestController
 @RequestMapping("/chat")
 public class ChatBotController {
 
-    private final ChatBotService chatBotService;
+    @Autowired
+    private ChatBotService chatBotService;
 
-    
-    public ChatBotController(ChatBotService chatBotService) {
-        this.chatBotService = chatBotService;
-    }
 
     @PostMapping("/send")
     public ChatBot sendMessage(@RequestBody Map<String, String> body) {
@@ -37,13 +25,13 @@ public class ChatBotController {
         return chatBotService.sendMessage(content, sender);
     }
 
-    @PostMapping("/join")
-    public ChatBot joinChat(@RequestBody String sender) {
+    @PostMapping("/join/{sender}")
+    public ChatBot joinChat(@PathVariable String sender) {
         return chatBotService.joinChat(sender);
     }
 
-    @PostMapping("/leave")
-    public ChatBot leaveChat(@RequestBody String sender) {
+    @PostMapping("/leave/{sender}")
+    public ChatBot leaveChat(@PathVariable String sender) {
         return chatBotService.leaveChat(sender);
     }
 }

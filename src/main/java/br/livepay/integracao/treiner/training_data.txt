@@ -1,4 +1,4 @@
-como faço para comprar um produto intencao_compra
+como fao para comprar um produto intencao_compra
 onde posso encontrar informações sobre um produto intencao_info_produto
 quero saber o status do meu pedido intencao_status_pedido
 como posso verificar o status da entrega intencao_status_pedido
