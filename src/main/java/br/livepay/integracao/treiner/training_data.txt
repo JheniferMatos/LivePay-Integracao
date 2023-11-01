@@ -1,0 +1,69 @@
+sim como faço para comprar um produto intencao_compra
+onde posso encontrar informações sobre um produto intencao_info_produto
+quero saber o status do meu pedido intencao_status_pedido
+como posso verificar o status da entrega intencao_status_pedido
+gostaria de informações sobre os preços dos produtos intencao_info_produto
+como realizar uma compra online intencao_compra
+posso fazer um pedido online intencao_compra
+quero saber mais sobre as especificações do produto intencao_info_produto
+quando meu pedido será entregue intencao_status_pedido
+existe uma maneira de rastrear minha entrega intencao_status_pedido
+estou interessado em saber mais sobre as opções de pagamento intencao_info_produto
+como posso adicionar um produto ao meu carrinho intencao_compra
+olá, vi que você está interessado em comprar nosso produto intencao_vendas
+sim, eu quero comprar intencao_vendas
+por favor, digite seu nome completo intencao_nome
+obrigado joão victor, agora, me informe o pedido que você gostaria intencao_pedido
+eu quero o fone de ouvido da redragon intencao_pedido
+ok, colocando fone de ouvido da redragon no carrinho, quantas unidades deseja intencao_quantidade
+eu quero 2 unidades intencao_quantidade
+ok, duas unidades confirmadas, o total é de r$300,00, deseja prosseguir intencao_confirmacao_pedido
+sim, confirmo o pedido intencao_confirmacao_pedido
+agora me informe seu endereço de entrega rio de janeiro, rj, copacabana, 1243, cep 856749337 intencao_endereco_entrega
+ok joão, seu endereço foi registrado com sucesso, agora me informe o meio de pagamento intencao_pagamento
+débito intencao_pagamento
+insira o número do cartão de débito 498673895058 intencao_numero_cartao
+agora insira a data de vencimento 03/25 intencao_data_vencimento
+agora envie o cvv que consta no cartão 345 intencao_cvv
+digite o nome que consta no cartão marlene santos intencao_nome_cartao
+por favor, digite o cpf do dono do cartão 7458748674 intencao_cpf
+obrigado, seu pedido foi realizado com sucesso e logo será enviado para a transportadora intencao_confirmacao_pedido
+confirmado, agora finalizaremos sua compra intencao_finalizar_compra
+para finalizar a compra, clique neste botão intencao_finalizar_compra
+cliquei intencao_finalizar_compra
+agradecemos por comprar conosco e esperamos contato em breve intencao_obrigado
+olá intencao_cumprimento
+qual é o prazo de entrega desses produtos intencao_prazo_entrega
+bom dia intencao_cumprimento
+Olá, gostaria de comprar um notebook. intencao_compra
+Qual é o valor do smartphone? intencao_preco
+Quantas unidades de TV estão disponíveis? intencao_quantidade
+Qual é o endereço da loja? intencao_endereco
+Como faço para pagar? intencao_pagamento
+Gostaria de saber mais sobre o produto.	intencao_detalhes
+Estou interessado em comprar esse produto intencao_interesse
+Estou com dúvidas sobre o produto. intencao_duvida
+Preciso de ajuda com o pedido intencao_ajuda
+Estou satisfeito com o produto intencao_satisfacao
+Não estou satisfeito com o produto	intencao_insatisfacao
+Vou recomendar a sua empresa para um amigo	intencao_recomendacao
+Não vou recomendar a sua empresa para um amigo	intencao_desrecomendacao
+Gostaria de fazer um pedido intencao_pedido
+Gostaria de cancelar o pedido intencao_cancelamento
+Gostaria de devolver o produto intencao_devolucao
+Gostaria de trocar o produto intencao_troca
+Gostaria de solicitar um reembolso.	intencao_reembolso
+Gostaria de falar com o gerente. intencao_gerente
+Gostaria de falar com o suporte técnico. intencao_suporte
+Gostaria de receber mais informações sobre a empresa intencao_informacoes
+Gostaria de saber mais sobre os produtos ou serviços da empresa. intencao_produtos
+Gostaria de saber mais sobre as promoções da empresa intencao_promocoes
+Gostaria de saber mais sobre as formas de pagamento da empresa.	intencao_pagamento
+Gostaria de saber mais sobre a política de trocas e devoluções da empresa. intencao_trocas
+Gostaria de saber mais sobre a política de reembolsos da empresa. intencao_reembolsos
+Gostaria de saber mais sobre a política de privacidade da empresa. intencao_privacidade
+Gostaria de saber mais sobre a política de cookies da empresa. intencao_cookies
+Gostaria de saber mais sobre a política de segurança da empresa. intencao_seguranca
+Gostaria de saber mais sobre a política de acessibilidade da empresa. intencao_acessibilidade
+Gostaria de saber mais sobre a política de sustentabilidade da empresa.	intencao_sustentabilidade
+Gostaria de saber mais sobre a empresa. intencao_empresa
