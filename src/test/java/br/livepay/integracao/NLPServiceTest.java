@@ -6,46 +6,31 @@ import org.junit.jupiter.api.DisplayName;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import br.livepay.integracao.service.NLPService;
+// import br.livepay.integracao.service.NLPService;
+import br.livepay.integracao.service.NLPService2;
 
 
 @AutoConfigureMockMvc
 @SpringBootTest
 @DisplayName("Testes para o LiveCommerceController")
 public class NLPServiceTest {
+    public static void main(String[] args) {
+        // Caminho para o modelo treinado
+        String modelPath = "src/main/java/br/livepay/integracao/treiner/intent-model.bin";
 
-    public static void main(String[] args) throws IOException {
-        // Cria um conjunto de dados de teste
-        String[] inputs = {
-            "quero comprar um celular",
-            "quero saber o status do meu pedido",
-            "quero cancelar um pedido",
-            "quero devolver um produto",
-            "posso fazer um pedido online"
-        };
-        String[] expectedOutputs = {
-            "intencao_compra",
-            "intencao_status_pedido",
-            "intencao_cancelamento",
-            "intencao_devolucao",
-            "intencao_compra"
-        };
+        NLPService2 nlpService = new NLPService2(modelPath);
 
-        // Cria um objeto NLPService
-        NLPService nlpService = new NLPService();
+        // Exemplo de processamento de texto e obtenção de resposta
+        String inputText1 = "Olá, como você está?";
+        String inputText2 = "Qual é o preço deste produto?";
+        String inputText3 = "Obrigado por sua ajuda.";
 
-        // Testa o arquivo
-        int correct = 0;
-        int total = inputs.length;
-        for (int i = 0; i < total; i++) {
-            String intent = nlpService.getIntent(inputs[i]);
-            if (intent.equals(expectedOutputs[i])) {
-                correct++;
-            }
-        }
+        String response1 = nlpService.processText(inputText1);
+        String response2 = nlpService.processText(inputText2);
+        String response3 = nlpService.processText(inputText3);
 
-        // Avalia os resultados
-        double precision = (double) correct / total;
-        System.out.println("Precisão: " + precision);
+        System.out.println("Resposta 1: " + response1);
+        System.out.println("Resposta 2: " + response2);
+        System.out.println("Resposta 3: " + response3);
     }
 }

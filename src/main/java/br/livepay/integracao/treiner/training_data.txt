@@ -1,4 +1,4 @@
-sim como faço para comprar um produto intencao_compra
+como faço para comprar um produto intencao_compra
 onde posso encontrar informações sobre um produto intencao_info_produto
 quero saber o status do meu pedido intencao_status_pedido
 como posso verificar o status da entrega intencao_status_pedido
@@ -67,3 +67,8 @@ Gostaria de saber mais sobre a política de segurança da empresa. intencao_segu
 Gostaria de saber mais sobre a política de acessibilidade da empresa. intencao_acessibilidade
 Gostaria de saber mais sobre a política de sustentabilidade da empresa.	intencao_sustentabilidade
 Gostaria de saber mais sobre a empresa. intencao_empresa
+Olá, como você está? saudacao
+Qual é o preço deste produto? pedido_informacao
+Como faço para devolver um item? pedido_informacao
+Obrigado por sua ajuda. agradecimento
+Até logo! despedida

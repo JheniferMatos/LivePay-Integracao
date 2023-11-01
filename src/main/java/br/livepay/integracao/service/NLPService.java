@@ -2,16 +2,16 @@ package br.livepay.integracao.service;
 
 import opennlp.tools.doccat.DoccatModel;
 import opennlp.tools.doccat.DocumentCategorizerME;
-import opennlp.tools.util.InputStreamFactory;
-import opennlp.tools.util.ObjectStream;
-import opennlp.tools.util.PlainTextByLineStream;
-import opennlp.tools.util.TrainingParameters;
-import opennlp.tools.util.model.BaseModel;
+// import opennlp.tools.util.InputStreamFactory;
+// import opennlp.tools.util.ObjectStream;
+// import opennlp.tools.util.PlainTextByLineStream;
+// import opennlp.tools.util.TrainingParameters;
+// import opennlp.tools.util.model.BaseModel;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Arrays;
+// import java.util.Arrays;
 import org.apache.commons.lang3.StringUtils;
 
 @Service
@@ -19,14 +19,16 @@ public class NLPService {
 
     private DocumentCategorizerME categorizer;
 
+
 public NLPService() {
     // Carrega o modelo pré-treinado para classificação de intenções
-    try (InputStream modelIn = getClass().getResourceAsStream("/br/livepay/integracao/service/intent-model.bin")) {
+    try (InputStream modelIn = getClass().getResourceAsStream("/br/livepay/integracao/treiner/intent-model.bin")) {
         DoccatModel model = new DoccatModel(modelIn);
         categorizer = new DocumentCategorizerME(model);
     } catch (IOException e) {
         e.printStackTrace();
     }
+    
 }
 
 public String getIntent(String text) {
@@ -51,24 +53,19 @@ public String getIntent(String text) {
     public String respondToIntent(String intent, String userResponse) {
 
         if (intent.equals("intencao_compra")) {
-            if (userResponse.contains("Sim")) {
-                return "Por favor, digite seu nome completo";
-            } else {
-                return "Desculpe, não entendi. Como posso ajudá-lo?";
-            }
-        } else if (intent.equals("intencao_nome")) {
+            return "Por favor, digite seu nome completo";
+        }
+        else if (intent.equals("intencao_nome")) {
             return "Obrigado " + userResponse + ", agora, me informe o pedido que gostaria.";
         } else if (intent.equals("intencao_pedido")) {
             return "Ok, colocando " + userResponse + " no carrinho, quantas unidades deseja?";
         } else if (intent.equals("intencao_quantidade")) {
             return "Ok, " + userResponse + " unidades confirmadas, o Total é de R$300,00, deseja prosseguir?";
         } else if (intent.equals("intencao_confirmacao_pedido")) {
-            if (userResponse.contains("Sim")) {
+            
                 return "Agora me informe seu endereço de entrega:";
-            } else {
-                return "Seu pedido não foi confirmado. Como posso ajudá-lo?";
-            }
-        } else if (intent.equals("intencao_endereco_entrega")) {
+            } 
+        else if (intent.equals("intencao_endereco_entrega")) {
             return "Ok " + userResponse + ", seu endereço foi registrado com sucesso, agora me informe o meio de pagamento.";
         } else if (intent.equals("intencao_pagamento")) {
             if (userResponse.contains("Débito")) {
@@ -90,8 +87,4 @@ public String getIntent(String text) {
             return "Desculpe, não entendi. Como posso ajudá-lo?";
         }
         
-        }
-    }
-
-
-    
+        }}
