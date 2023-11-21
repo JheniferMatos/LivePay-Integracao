@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+</head>
+<body>
+    <div id="chat"></div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/webjars/stompjs/sockjs.js"></script>
+    <script src="/webjars/stompjs/stomp.js"></script>
+    <script>
+        var stompClient = null;
+
+        function connect() {
+            var socket = new SockJS('/ws');
+            stompClient = Stomp.over(socket);
+            stompClient.connect({}, function(frame) {
+                stompClient.subscribe('/topic/messages', function(response) {
+                    showMessage(JSON.parse(response.body));
+                });
+            });
+        }
+
+        function sendMessage() {
+            var message = $("#message").val();
+            stompClient.send("/app/chat", {}, message);
+        }
+
+        function showMessage(message) {
+            $("#chat").append("<p>" + message + "</p>");
+        }
+
+        $(function () {
+            connect();
+
+            $("form").on('submit', function (e) {
+                e.preventDefault();
+            });
+
+            $("#sendBtn").click(function() {
+                sendMessage();
+            });
+        });
+    </script>
+</body>
+</html>

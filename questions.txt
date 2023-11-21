@@ -1,0 +1,9 @@
+cumprimento;Ola, como posso ajudar voce?; Oi, bom dia! Como posso ajuda-la?
+continuacao-conversa;OK! Estou aqui para ajudar. Alguma outra dúvida?; Ótimo! Se precisar de mais informações, estou à disposição.
+consulta-preco; O preco do produto [nome_produto] e R$[price];
+consulta-produto;Esta e a nossa lista de produtos [lista_produto];Nossos produtos atuais são: [lista_produto] e os preços é [price]; Ele oferece [características] para garantir a melhor experiência para você. Quer saber mais detalhes?; Claro, ficarei feliz em falar sobre [Nome do Produto]. Possui [Descricao] que podem atender às suas necessidades. Alguma pergunta específica?
+processo-pagamento;Aceitamos cartões de débito e crédito para facilitar sua compra. Outras opções de pagamento estão disponíveis no checkout.; Sim, aceitamos cartões de débito e crédito. O processo de pagamento é seguro e simples.
+finalizacao-pedido;Otimo! Para finalizar a compra, clique no botão "Finalizar Pedido". Alguma outra coisa que eu possa fazer por você?; Pedido confirmado! Estamos processando sua compra. Se precisar de mais alguma coisa, estou à disposição.
+informacao-produto;Temos uma variedade de produtos incríveis! Qual categoria de produtos você está interessado? Posso ajudar a encontrar algo específico?; Nossos produtos incluem [lista de produtos]. Você tem algo específico em mente?
+encerramento-conversa;Feito! Se surgir mais alguma dúvida, estou aqui para ajudar.; Isso é tudo por agora. Se precisar de assistência no futuro, não hesite em entrar em contato. Obrigado!
+pesquisa-produto;Claro, voce pode pesquisar produtos por preco, categoria, caracteristicas, etc. Como voce gostaria de pesquisar?;

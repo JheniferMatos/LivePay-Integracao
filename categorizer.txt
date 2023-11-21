@@ -1,0 +1,11 @@
+cumprimento Olá! Oi! Como vai você? Ei! Como estão as coisas? Bom dia! Boa noite! Boa tarde! Hey!
+continuacao-conversa	OK! Uau! Ótimo! E isso? Eu vejo. Isso é ótimo. Bom. Realmente? Deixe-me pensar sobre isso.
+consulta-preco	Quero fazer um pedido do produto Madeira. Quantos estão disponíveis e qual é o preço? Quanto custa isso? Qual é o preço? Qual é o custo? Quanto custa? Pode me dar informações sobre os preços? Qual o preço do produto [nome_produto]? Qual o custo do produto [nome_produto]? Quanto custa o produto [nome_produto]? Qual é o preço do produto [nome_produto]?
+consulta-produto	 Pode me falar sobre os produtos? Quais são os produtos disponíveis? Do que se trata? Quais são as características? Conte-me sobre as características do produto.
+processo-pagamento	Aceitam cartão de débito? Aceitam cartão de crédito? Quais são as opções de pagamento? Quero comprar.
+finalizacao-pedido	Finalizar o pedido. Confirmar a compra. Estou pronto para finalizar a compra.
+informacao-produto	Diga-me sobre seus produtos. Quais produtos você tem disponíveis? Conte-me sobre as opções de produtos.
+encerramento-conversa	Feito. Isso é tudo. Terminei. Obrigado pela informação. Obrigado. Nada mais.
+pesquisa-produto   Como posso pesquisar produtos? Quero encontrar produtos por [criterio].
+pesquisa-produto-preco   Qual é a faixa de preços dos produtos? Quais produtos estão disponíveis em uma faixa de preço específica?
+pesquisa-produto-categoria   Quais são as categorias de produtos disponíveis? Mostre-me produtos de uma categoria específica.
